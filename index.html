@@ -49,24 +49,6 @@
             margin-top: 9px;
             margin-bottom: 7px;
         }
-        
-        /* 可选的CSS样式，用于调整PDF的显示效果 */
-        .pdf-viewer {
-            /* 使用视口宽度的百分比来设置宽度，这里设置为视口宽度的80% */
-            width: 80vw;
-            /* 使用视口高度的百分比来设置高度，这里设置为视口高度的60% */
-            height: 60vh;
-            /* 确保图像框不会超出其容器的大小 */
-            max-width: 100%;
-            max-height: 100%;
-            /* 其他样式保持不变 */
-            border: 1px solid #ddd;
-            /* 确保图像在容器中居中显示 */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: auto; /* 如果PDF内容超出视图框，允许滚动 */
-        }
     </style>
 </head>
 
@@ -80,16 +62,10 @@
 It mainly proposes a Multi-layer Branch Semantic Transformation Structure (MBSTS), which includes a multi-salce features extraction layer with some multi-parallel progressive sub-modules and a multi-level feature fusion layer with some channel spatial attention sub-modules. Specifically, multi-parallel progressive sub-modules are used to expand a series of convolutional layers with an increasing dilation rate to prevent the grid phenomenon when different sizes of receptive fields are obtained and enlarge the receptive field. The channel spatial attention sub-module to cross-fuse the content features and style features of the corresponding branch output and learns the feature information of different scales. The confidence reweighted calculation is introduced to select a primary pattern from multiple possible patterns to ensure modal content structure consistency and maintain perceptual quality.</p>
 <!--         <h3>😊It is recommended to use the Chrome browser to interact with the panoramic image below.↓↓↓↓</h3>     -->
     </div>
-
-    <div class="pdf-viewer">
-         <h3>😊Residual heatmap display.😊</h3>
-        <!-- 使用embed标签嵌入PDF文件 -->
-        <embed src="saved_pdf/Residual heatmap.pdf" type="application/pdf">
-    </div>
     
     <div>
-    <iframe allowfullscreen src="saved_pdf/Residual heatmap.pdf" width="800px"
-            height="400px"></iframe>
+        <h3>😊Residual heatmap display.😊</h3>
+        <iframe allowfullscreen src="saved_pdf/Residual heatmap.pdf" width="1600px" height="800px"></iframe>
     </div>
     
   </body>
