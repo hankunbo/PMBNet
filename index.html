@@ -52,9 +52,20 @@
         
         /* 可选的CSS样式，用于调整PDF的显示效果 */
         .pdf-viewer {
-            width: 100%; /* 根据需要调整宽度 */
-            height: 100%; /* 根据需要调整高度 */
-            border: 5px solid #ddd; /* 可选的边框样式 */
+            /* 使用视口宽度的百分比来设置宽度，这里设置为视口宽度的80% */
+            width: 80vw;
+            /* 使用视口高度的百分比来设置高度，这里设置为视口高度的60% */
+            height: 60vh;
+            /* 确保图像框不会超出其容器的大小 */
+            max-width: 100%;
+            max-height: 100%;
+            /* 其他样式保持不变 */
+            border: 1px solid #ddd;
+            /* 确保图像在容器中居中显示 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: auto; /* 如果PDF内容超出视图框，允许滚动 */
         }
     </style>
 </head>
