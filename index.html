@@ -49,6 +49,24 @@
             margin-top: 9px;
             margin-bottom: 7px;
         }
+
+        .aspect-ratio {
+    position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 宽高比 */
+  overflow: hidden; /* 隐藏溢出的内容 */
+}
+
+.aspect-ratio iframe {
+  position: absolute;
+  width: 100%; /* 容器宽度的100% */
+  max-width: 1280px; /* 最大宽度为1280px */
+  height: 720px; /* 原始高度 */
+  left: 50%;
+  transform: translateX(-50%); /* 水平居中 */
+  top: 0; /* 垂直方向上移至顶部 */
+}
     </style>
 </head>
 
@@ -64,13 +82,37 @@ It mainly proposes a Multi-layer Branch Semantic Transformation Structure (MBSTS
     </div>
 
     <div>
-        <h3>😊Rendering display😊</h3>
-        <iframe allowfullscreen src="saved_pdf/Rendering display" width="1600px" height="800px"></iframe>
+        <h2>😊Rendering display😊</h2>
+        <iframe allowfullscreen src="saved_pdf/Rendering display.pdf" width="1400px" height="600px"></iframe>
     </div>
     
     <div>
-        <h3>😊Residual heatmap display.😊</h3>
-        <iframe allowfullscreen src="saved_pdf/Residual heatmap.pdf" width="1600px" height="800px"></iframe>
+        <h2>😊Residual heatmap display😊</h2>
+        <iframe allowfullscreen src="saved_pdf/Residual heatmap.pdf" width="600px" height="1600px"></iframe>
+    </div>
+    
+    <div>
+        <h2>😊Knife - Residual heatmap comparison - Original Video😊</h2>
+        <iframe allowfullscreen src="saved_pdf/180925_02_05_720p_5000br.mp4" width="1280px" height="720px"></iframe>
+    </div>  
+
+    <div class="aspect-ratio">
+        <iframe src="//player.bilibili.com/player.html?aid=39367828&cid=69177312&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+    </div>
+
+    <div>
+        <h2>😊Sketch-Knife - Styled Video😊</h2>
+        <iframe allowfullscreen src="saved_pdf/sketch-knife.mp4" width="1280px" height="720px"></iframe>
+    </div>
+
+    <div>
+        <h2>😊Tunnel Exit - Brightness Detail Comparison - Original Video😊</h2>
+        <iframe allowfullscreen src="saved_pdf/9005-216332135.mp4" width="1280px" height="720px"></iframe>
+    </div>
+
+    <div>
+        <h2>😊Woman_in_peasant_dress-Tunnel Exit - Styled Video😊</h2>
+        <iframe allowfullscreen src="saved_pdf/woman_in_peasant_dress-bright_total.mp4" width="1280px" height="854px"></iframe>
     </div>
     
   </body>
