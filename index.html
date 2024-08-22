@@ -49,14 +49,6 @@
       <a href="" style="pointer-events: none; text-decoration:none; color: black;">Xiangmin Xu</a>
     <br>
   </span></p>
-  <p>Structural integrity of content is a challenge to achieve high-quality video styling. However, existing video style transfer methods tend to amplify the slight noise present in the input video, 
-     resulting in unsmooth transitions between stylized video frames. This can lead to visual flickering and discontinuities over time. Besides, the lack of style consistency between video frames or 
-     between different modes can make the overall style of the video appear fragmented or unnatural. }To address these issues, \tjp{this paper proposes an innovative real-time end-to-end video style 
-     transfer model, called Progressive Multi-Branch Video Style Transfer Network (PMBNet). It mainly proposes a Multi-layer Branch Semantic Transformation Structure (MBSTS), which includes a multi-salce 
-     features extraction layer with some multi-parallel progressive sub-modules and a multi-level feature fusion layer with some channel spatial attention sub-modules. Specifically, multi-parallel progressive 
-     sub-modules are used to expand a series of convolutional layers with an increasing dilation rate to prevent the grid phenomenon when different sizes of receptive fields are obtained and enlarge the receptive 
-     field. The channel spatial attention sub-module to cross-fuse the content features and style features of the corresponding branch output and learns the feature information of different scales. 
-     The confidence reweighted calculation is introduced to select a primary pattern from multiple possible patterns to ensure modal content structure consistency and maintain perceptual quality.</p>
   <br>
 <!--  <img src="./saved_pdf/Effect - Square Diagram.pdf" class="teaser-gif" style="width:100%;"><br>  -->
       <div style="text-align: center;">
@@ -65,39 +57,30 @@
   <h3 style="text-align:center"><em>Visualization results of <bf>PMBNet</bf> for image style transfer across eight style reference images is shown above. </em></h3>
 </div>
 
-    <h1>Progressive Multi-Branch Video Style Transfer Network via confidence reweighted Projection</h1>
-    <div class="paper-info">
+<div class="content">
+  <h2 style="text-align:center;"><strong>Abstract</strong></h2>
+<p>Structural integrity of content is a challenge to achieve high-quality video styling. However, existing video style transfer methods tend to amplify the slight noise present in the input video, 
+     resulting in unsmooth transitions between stylized video frames. This can lead to visual flickering and discontinuities over time. Besides, the lack of style consistency between video frames or 
+     between different modes can make the overall style of the video appear fragmented or unnatural. To address these issues, this paper proposes an innovative real-time end-to-end video style 
+     transfer model, called Progressive Multi-Branch Video Style Transfer Network (PMBNet). It mainly proposes a Multi-layer Branch Semantic Transformation Structure (MBSTS), which includes a multi-salce 
+     features extraction layer with some multi-parallel progressive sub-modules and a multi-level feature fusion layer with some channel spatial attention sub-modules. Specifically, multi-parallel progressive 
+     sub-modules are used to expand a series of convolutional layers with an increasing dilation rate to prevent the grid phenomenon when different sizes of receptive fields are obtained and enlarge the receptive 
+     field. The channel spatial attention sub-module to cross-fuse the content features and style features of the corresponding branch output and learns the feature information of different scales. 
+     The confidence reweighted calculation is introduced to select a primary pattern from multiple possible patterns to ensure modal content structure consistency and maintain perceptual quality.</p>
+</div>
 
-        <h2>Kunbo Han, Chunmei Qing, Junpeng Tan, Xiangmin Xu</h2>
-        <p>Structural integrity of content is a challenge to achieve high-quality video styling. However, existing video style transfer methods tend to amplify the slight noise present in the input video, resulting in unsmooth transitions between stylized video frames. This can lead to visual flickering and discontinuities over time. Besides, the lack of style consistency between video frames or between different modes can make the overall style of the video appear fragmented or unnatural. }To address these issues, \tjp{this paper proposes an innovative real-time end-to-end video style transfer model, called Progressive Multi-Branch Video Style Transfer Network (PMBNet).
-It mainly proposes a Multi-layer Branch Semantic Transformation Structure (MBSTS), which includes a multi-salce features extraction layer with some multi-parallel progressive sub-modules and a multi-level feature fusion layer with some channel spatial attention sub-modules. Specifically, multi-parallel progressive sub-modules are used to expand a series of convolutional layers with an increasing dilation rate to prevent the grid phenomenon when different sizes of receptive fields are obtained and enlarge the receptive field. The channel spatial attention sub-module to cross-fuse the content features and style features of the corresponding branch output and learns the feature information of different scales. The confidence reweighted calculation is introduced to select a primary pattern from multiple possible patterns to ensure modal content structure consistency and maintain perceptual quality.</p>
-<!--         <h3>Below, we will present images and videos generated by our network</h3>     -->
-    </div>
-<!-- 
-    <div>
-        <h2>Comparison of effectiveness with 7 other methods</h2>
-        <iframe allowfullscreen src="saved_pdf/Rendering display.pdf" width="640px" height="200px"></iframe>
-    </div>
-    
-    <div>
-        <h2>😊Residual heatmap display😊</h2>
-        <iframe allowfullscreen src="saved_pdf/Residual heatmap.pdf" width="640px" height="1600px"></iframe>
-    </div>
--->
-    <div>
-        <h2>Image-driven style transfer</h2>
-        <iframe allowfullscreen src="saved_pdf/Effect - Square Diagram.pdf" width="720px" height="720px"></iframe>
-    </div>
-    
-    <div>
-        <h2>😊Knife - Original Video - Sketch-Knife - Styled Video - Detail analysis😊</h2>
-         <iframe allowfullscreen src="https://player.bilibili.com/player.html?aid=113000136639320&cid=500001657285708&page=1&high_quality=1" width="640px" height="720px"></iframe>
-    </div>  
-
-    <div>
-        <h2>😊Sketch-Knife - Residual heatmap comparison😊</h2>
-        <iframe allowfullscreen src="https://player.bilibili.com/player.html?aid=113000136641364&cid=500001657286426&page=1&high_quality=1" width="640px" height="360px"></iframe>
-    </div>
+<div class="content">
+  <h2 style="text-align:center"><strong>Knife - Original Video - Sketch-Knife - Styled Video - Detail analysis</strong></h2>
+  <p>
+    PMBNet can make video frame transitions smoother, addressing visual flicker and discontinuity
+  </p>
+  <iframe allowfullscreen src="https://player.bilibili.com/player.html?aid=113000136639320&cid=500001657285708&page=1&high_quality=1" width="640px" height="720px"></iframe>
+   
+   <p>
+    Original Video-Styled Video -  Residual heatmap comparison
+  </p>
+   <iframe allowfullscreen src="https://player.bilibili.com/player.html?aid=113000136641364&cid=500001657286426&page=1&high_quality=1" width="640px" height="360px"></iframe>
+</div>
 
     <div>
         <h2>😊Tunnel Exit - Original Video - Woman_in_peasant_dress-Tunnel Exit - Styled Video - Brightness Detail Comparison😊</h2>
