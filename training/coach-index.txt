@@ -1,0 +1,49 @@
+
+此文档将记录 coach.py 中 Coach 类中各个self参数
+
+self.opts  传入的opt参数
+
+self.style_net  我们所训练的网络
+
+self.optimizer  我们的优化器
+
+self.Validation() 初始化评估函数， init Coach时只保存了风格图片与内容图片
+self.Validate(epoch) 评估函数 根据实时的模型进行评估
+
+
+以及在正常训练状态下，self.opts 中各个参数的取值
+我将以首字母进行排序
+
+adaversarial_loss 用不用 -- 效果好 -- 用 -- 多了一个netD的网络 -- self.optimizerD 别忘优化啊！！！
+continue_training 真是绷不住了， 直接给个pretrain model， 用的话就是True， 不用就是False
+
+不定长元组参数（*args） 不定长字典参数（**kwargs）
+
+
+
+待解决的问题：
+1. load 模型时，出现except时的解决方法，（即分块load）
+2. 每一个loss要初始化为0，在哪里初始化  （每一个模块初始参数都为 0 ）  OK
+3. continue_training  OK
+4. continue_training 时pre_modelD ，pre_model会load， 就我保存的optimizer不load是吧
+
+指令的应用
+python train.py --cuda --gpu 0 --epoches 5 --batchSize 8 --lr 1e-4 --style_content_loss --ssim_loss --contentWeight 1 --recon_loss --recon_ssim_loss --tv_loss --temporal_loss --data_sigma --data_w  --content_data "D:/coco2014/train2014" --style_data "D:/Wiki_style/train"
+python train.py --cuda --gpu 0 --style_content_loss --ssim_loss --recon_loss --recon_ssim_loss --tv_loss --temporal_loss --with_IRT --data_sigma --data_w --content_data "D:/coco2014/train2014" --style_data "D:/Wiki_style/train"
+
+--continue_training  是否为继续训练，即训练前是否重新load数据
+--temporal_loss      是否使用temporal_loss
+--ssim_loss          是否使用ssim_loss
+--style_content_loss 是否使用style_content_loss
+--recon_loss         是否使用recon_loss
+--spa_loss           是否使用spa_loss
+--exp_loss           是否使用exp_loss
+--recon_ssim_loss    是否使用recon_ssim_loss
+--tv_loss            是否使用tv_loss
+--old_style_loss     是否使用old_style_loss
+--adaversarial_loss  是否使用adaversarial_loss
+--with_IRT           是否使用IRT_loss
+--content_data --style_data 都是必须自己写的     --content_data "D:/coco2014/train2014" --style_data "D:/Wiki_style/train"  
+
+ --data_sigma --data_w  temporal_loss 设置的参数，不加还会报错（参数未定义的，懒得改）
+
