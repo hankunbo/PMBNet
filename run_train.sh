@@ -1,0 +1,6 @@
+#python main.py --EID=1 --visible_devices=1 --num_downs=5 --batch_size=10 --img_size=96 --use_per=true --save_freq=1 --epoch=100 --decay_epoch=20 --sr_lr=2e-4 --lambda_l1=10 --lambda_per=1 --use_per=true
+# python3 train.py --cuda --gpu 0 --epoches 3 --batchSize 4 --lr 1e-4 --style_content_loss --spa_loss --exp_loss --contentWeight 1 --recon_loss --tv_loss --temporal_loss --data_sigma --data_w --continue_training --load_epoch 2
+# python3 train.py --cuda --gpu 6 --epoches 3 --batchSize 4 --lr 1e-4 --style_attention --style_content_loss --ssim_loss --contentWeight 1 --recon_loss --recon_ssim_loss --tv_loss --temporal_loss --data_sigma --data_w 
+# python3 train.py --cuda --gpu 2 --epoches 3 --batchSize 4 --lr 1e-4 --style_attention --style_content_loss --contentWeight 1 --recon_loss --tv_loss --temporal_loss --data_sigma --data_w 
+# python3 train.py --cuda --gpu 4 --epoches 3 --batchSize 4 --lr 1e-4  --style_content_loss --contentWeight 1 --recon_loss --tv_loss --temporal_loss --data_sigma --data_w 
+python3 train.py --cuda --gpu 0 --epoches 3 --batchSize 8 --lr 1e-4 --style_content_loss --ssim_loss --contentWeight 1 --recon_loss --recon_ssim_loss --tv_loss --temporal_loss --data_sigma --data_w 
