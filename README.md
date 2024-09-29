@@ -18,6 +18,13 @@ conda env create -f environment.yaml
 conda activate PMBNet
 ```
 
+## Training Details
+
+Our Parameter configuration lies in 'options/train_options.py'
+
 ```
 python train.py --cuda --gpu 0 --style_content_loss --ssim_loss --recon_loss --recon_ssim_loss --tv_loss --temporal_loss --with_IRT --data_sigma --data_w --content_data "D:/coco2014/train2014" --style_data "D:/Wiki_style/train"
 ```
+
+
+![image](1.png)
