@@ -135,4 +135,3 @@ dependencies:
       - tqdm==4.66.2
       - userpath==1.9.2
       - zipp==3.20.2
-prefix: C:\Users\JWL\anaconda3\envs\PMBNet2
